@@ -8,8 +8,8 @@ html {
     --gpt-light-blue: #1e5b71;
     --gpt-cta-green: #17824a;
     --gpt-white: #f6f5f3;
-    --gpt-font-family-avenir: Avenir, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    --gpt-font-family-work-sans: "Work Sans", sans-serif;
+    --gpt-font-family-paragraph: Avenir, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --gpt-font-family-heading: "Work Sans", sans-serif;
 }
 
 .gpt-search-container {
@@ -27,13 +27,13 @@ html {
 
         .gpt-heading {
             font-size: 1.3333rem;
-            font-family: var(--gpt-font-family-work-sans);
+            font-family: var(--gpt-font-family-heading);
             font-weight: 600;
         }
 
         .gpt-sub-heading {
             font-size: 1rem;
-            font-family: var(--gpt-font-family-avenir);
+            font-family: var(--gpt-font-family-paragraph);
         }
 
     .chat-container {
@@ -53,7 +53,7 @@ html {
             color: var(--gpt-msg-color);
             padding: 0.8889rem;
             border-radius: 0.25rem;
-            font-family: var(--gpt-font-family-avenir);
+            font-family: var(--gpt-font-family-paragraph);
         }
 
         .gpt-message-bubble.response {
@@ -70,7 +70,7 @@ html {
         .gpt-interface input {
             flex-grow: 1;
             font-size: 1rem;
-            font-family: var(--gpt-font-family-avenir);
+            font-family: var(--gpt-font-family-paragraph);
             padding-inline: 1rem;
             border-radius: 0.25rem;
             border: 1px solid var(--gpt-dark-blue);
@@ -84,7 +84,7 @@ html {
             display: flex;
             align-items: center;
             gap: 0.45rem;
-            font-family: var(--gpt-font-family-avenir);
+            font-family: var(--gpt-font-family-paragraph);
             font-size: 1.125rem;
             line-height: 1.5;
             padding-block: 0.30556rem;
