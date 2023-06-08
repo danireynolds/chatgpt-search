@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <div id="gptSearch"></div>
-  <script src="https://proud-sea-053d4db10-3.centralus.3.azurestaticapps.net/bhsGptUI.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/site.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="gpt-search-container">
+      <div class="gpt-header">
+        <img src="./img/support_agent.svg" alt="" />
+        <div class="gpt-header-text">
+          <div class="gpt-heading">Brinks AI Assistant</div>
+          <div class="gpt-sub-heading">Solve problems, discover opportunities, get help faster.</div>
+        </div>
+      </div>
+
+      <div class="chat-container">
+        <p class="gpt-message-bubble">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic ad ut ipsum atque perferendis commodi similique, voluptates animi exercitationem, voluptatem, dolor voluptatum aut quia at?
+        </p>
+
+        <p class="gpt-message-bubble response">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis voluptatibus voluptas debitis odit praesentium, iure dolores! Consequuntur, incidunt dicta. Quisquam impedit tempore
+          voluptatum delectus repudiandae eveniet autem quod totam culpa obcaecati, nobis fuga iste perspiciatis! A, velit tempore! Aperiam tenetur vitae laudantium debitis alias obcaecati sapiente
+          recusandae laborum soluta praesentium.
+        </p>
+
+        <p class="gpt-message-bubble">Lorem ipsum dolor, sit amet consectetur</p>
+      </div>
+
+      <div class="gpt-interface">
+        <button class="gpt-button">
+          <img src="./img/restart.svg" alt="" />
+          <div class="button-text">New Topic</div>
+        </button>
+        <input type="text" placeholder="Ask me anything" />
+        <button class="gpt-button gpt-button-green">
+          <img src="./img/send.svg" alt="" />
+          <div class="button-text">Send Message</div>
+        </button>
+      </div>
+    </div>
+  </body>
 </html>

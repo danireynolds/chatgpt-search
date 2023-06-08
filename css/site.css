@@ -1,0 +1,109 @@
+/* Ignore HTML font-size setting here for example because base font size on brinkshome.com is 18px*/
+html {
+    font-size: 18px;
+}
+
+:root {
+    --gpt-dark-blue: #0f2835;
+    --gpt-light-blue: #1e5b71;
+    --gpt-cta-green: #17824a;
+    --gpt-white: #f6f5f3;
+    --gpt-font-family-avenir: Avenir, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --gpt-font-family-work-sans: "Work Sans", sans-serif;
+}
+
+.gpt-search-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.gpt-button {
+    --gpt-btn-bg-color: var(--gpt-dark-blue);
+    --gpt-btn-text-color: var(--gpt-white);
+    --gpt-btn-border-color: var(--gpt-dark-blue);
+    --gpt-hover-background-color: #223945;
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-family: var(--gpt-font-family-avenir);
+    font-size: 1.125rem;
+    line-height: 1.5;
+    padding-block: 0.30556rem;
+    padding-inline: 1rem;
+    background-color: var(--gpt-btn-bg-color);
+    color: var(--gpt-btn-text-color);
+    border: 5px solid var(--gpt-btn-border-color);
+    border-radius: 0.25rem;
+
+}
+
+.gpt-button:hover {
+    background-color: var(--gpt-hover-background-color);
+    border-color: var(--gpt-hover-background-color);
+    cursor: pointer;
+}
+
+.gpt-button-green {
+    --gpt-btn-bg-color: var(--gpt-cta-green);
+    --gpt-btn-border-color: var(--gpt-cta-green);
+    --gpt-hover-background-color: #09a854;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-inline: auto;
+}
+
+.gpt-message-bubble {
+    --gpt-msg-bg-color: var(--gpt-dark-blue);
+    --gpt-msg-color: var(--gpt-white);
+    --gpt-message-align: flex-end;
+    align-self: var(--gpt-message-align);
+    max-width: 80%;
+    background-color: var(--gpt-msg-bg-color);
+    color: var(--gpt-msg-color);
+    padding: 0.8889rem;
+    border-radius: 0.25rem;
+    font-family: var(--gpt-font-family-avenir);
+}
+
+.gpt-message-bubble.response {
+    --gpt-msg-bg-color: var(--gpt-white);
+    --gpt-msg-color: var(--gpt-dark-blue);
+    --gpt-message-align: flex-start;
+}
+
+.gpt-interface {
+    display: flex;
+    gap: 1rem;
+}
+
+.gpt-interface input {
+    flex-grow: 1;
+    font-size: 1rem;
+    font-family: var(--gpt-font-family-avenir);
+    padding-inline: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--gpt-dark-blue);
+}
+
+.gpt-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.gpt-heading {
+    font-size: 1.3333rem;
+    font-family: var(--gpt-font-family-work-sans);
+    font-weight: 600;
+}
+
+.gpt-sub-heading {
+    font-size: 1rem;
+    font-family: var(--gpt-font-family-avenir);
+}
