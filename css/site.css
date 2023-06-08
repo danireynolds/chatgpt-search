@@ -107,3 +107,14 @@ html {
             --gpt-btn-border-color: var(--gpt-cta-green);
             --gpt-hover-background-color: #09a854;
         }
+
+@media only screen and (max-width : 900px) {
+    .button-text {
+        display: none;
+    }
+
+    .chat-container {
+        width: auto;
+        padding-inline: 1rem;
+    }
+}
